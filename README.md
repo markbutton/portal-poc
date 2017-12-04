@@ -1,6 +1,22 @@
 # PortalPoc
 
+Example application utilizing @ngrx libraries, showcasing common patterns and best practices.
+
+This app is a book collection manager. The user can authenticate, use the Google Books API to search for
+books and add them to their collection. This application utilizes [@ngrx/db](https://github.com/ngrx/db)
+to persist the collection across sessions; [@ngrx/store](https://github.com/ngrx/store) to manage
+the state of the app and to cache requests made to the Google Books API;
+[@angular/router](https://github.com/angular/angular) to manage navigation between routes;
+[@ngrx/effects](https://github.com/ngrx/effects) to isolate side effects.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
+
+### Included
+ - [@ngrx/store](https://github.com/ngrx/store) - RxJS powered state management for Angular apps, inspired by Redux
+ - [@ngrx/effects](https://github.com/ngrx/effects) - Side effect model for @ngrx/store
+ - [@angular/router](https://github.com/angular/angular) - Angular Router
+ - [@ngrx/db](https://github.com/ngrx/db) - RxJS powered IndexedDB for Angular apps
+ - [@ngrx/store-devtools](https://github.com/ngrx/store-devtools) - Instrumentation for @ngrx/store enabling time-travel debugging
 
 ## Install
 
@@ -8,7 +24,7 @@ Run `npm install` to install necessary dependencies.
 
 ## Authentication
 
-You can sign into the demo app using the username `foo@test.com` and the password `password`. It's a highly secure app. :thumbsup:
+You can sign into the demo app using the username `test` and the password `test`. It's a highly secure app. :thumbsup:
 
 ## Development server
 
