@@ -57,11 +57,12 @@ import { environment } from '../environments/environment';
      *
      * See: https://github.com/zalmoxisus/redux-devtools-extension
      */
-/*     !environment.production
+     !environment.production
       ? StoreDevtoolsModule.instrument({
-          name: 'NgRx Book Store DevTools',
+          maxAge: 10
+          //name: 'NgRx Book Store DevTools',
         })
-      : [], */
+      : [], 
 
     /**
      * EffectsModule.forRoot() is imported once in the root module and
